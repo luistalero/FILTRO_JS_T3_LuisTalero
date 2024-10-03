@@ -1,0 +1,249 @@
+[{
+    "marvel": [
+        {
+            "id": "1",
+            "nombre": "Tony Stark",
+            "nombreH": "Iron Man",
+            "biografia": "Iron Man es el personaje de superhéroe de Anthony Edward 'Tony' Stark, un multimillonario magnate empresarial, filántropo estadounidense, playboy y un ingenioso científico e ingeniero, que dirige la empresa de fabricación de armas Industrias Stark.Cuando Stark fue capturado en una zona de guerra y sufrió una herida grave en el corazón, construyó su armadura de Iron Man y escapó de sus captores",
+            "habilidad": "Armadura Iron Man",
+            "fuezaA": "Fueza Sobrehumana(supera con creces cualquier medidor)"
+        },
+
+        {
+            "id": "2",
+            "nombre": "Peter Parker",
+            "nombreH": "Spider Man",
+            "biografia": "Se trata de un superhéroe que emplea sus habilidades sobrehumanas, reminiscentes de una araña, para combatir a otros supervillanos que persiguen fines siniestros",
+            "habilidad": "Todas las habilidades de una Araña, Sentido Aracnido,",
+            "fuezaA": "Fueza Sobrehumana otorgada por la armadura (supera con creces cualquier medidor)"
+        },
+        {
+            "id": "3",
+            "nombre": "Stephen Vincent Strange",
+            "nombreH": "Doctor Strange",
+            "biografia": "Después de convertirse en uno de los alumnos del Hechicero Supremo, se convierte en un practicante tanto de las artes místicas como de las artes marciales. Además de conocer muchos hechizos poderosos, tiene un traje con dos objetos místicos: la Capa de Levitación y el Ojo de Agamotto, que le otorgan poderes adicionales. Strange es ayudado en el camino por su amigo y sirviente llamado Wong, su aliado llamado el Barón Mordo y una gran variedad de objetos místicos.",
+            "habilidad": "Artes misticas, Control del espacio temporal gracias a que posee la gema del tiempo",
+            "fuezaA": "Su fuerza esta Fuera de las realidades de su dimension"
+        },
+        {
+            "id": "4",
+            "nombre": "Steven Grant Rogers",
+            "nombreH": "Capitan America",
+            "biografia": "El Capitán América fue el primer personaje de Marvel Comics que apareció en medios fuera de los cómics con el estreno de la serie de 1944, Capitán América. Desde entonces, el personaje ha aparecido en otras películas y series de televisión. En el Universo Cinematográfico de Marvel fue interpretado por Chris Evans en Capitán América: el primer vengador (2011)",
+            "habilidad": "Fuerza, velocidad, agilidad, resistencia durabilidad, aguante, coordinación, equilibrio, reflejos sobrehumanos, Regeneración y factor curativo acelerado ",
+            "fuezaA": "Fueza Sobrehumana otorgada por la por un suero para crear super Soldados"
+        },
+        {
+            "id": "5",
+            "nombre": "Donald Blake",
+            "nombreH": "Thor",
+            "biografia": "Thor es un superhéroe ficticio que aparece en los cómics estadounidenses publicados por Marvel Comics. Es el dios del trueno asgardiano basado en la deidad homónima, del pueblo ficticio inspirado en el mundo de Asgard de la mitología nórdica, de donde toman inspiración muchos aspectos del personaje. Thor es uno de los dioses de Asgard e hijo del rey de Asgard, Odín.",
+            "habilidad": "Poderes del dios del Trueno",
+            "fuezaA": "Fuerzas de un Dios"
+        },
+        {
+            "id": "6",
+            "nombre": "Robert Bruce Banner",
+            "nombreH": "Hulk",
+            "biografia": "Después de una exposición accidental a los rayos gamma durante la detonación de una bomba experimental, Banner se transforma físicamente en Hulk cuando está sometido a estrés emocional, a su voluntad o en contra de ella, lo que a menudo lleva a destrozos y conflictos que complican la vida civil de Banner.",
+            "habilidad": "Intelecto nivel genio, Experto científico e ingeniero como hulk Esta conlleva por defecto: súper velocidad, Súper resistencia y durabilidad",
+            "fuezaA": "Descomunal súper fuerza"
+        },
+        {
+            "id": "7",
+            "nombre": "Henry Pym",
+            "nombreH": "Ant-Man ",
+            "biografia": "Ant-Man (Hombre Hormiga en algunas traducciones al español) es el nombre de varios superhéroes ficticios que aparecen en libros publicados por Marvel Comics.",
+            "habilidad": "Líder en investigaciones de mirmecología, Cambios de tamaño desde casi microscópico a ~ 100 pies gigantescos (ambos en extremos), Mantiene la fuerza del tamaño normal en estado reducido.",
+            "fuezaA": "fuerza de un hombre de 30 años aunque su tamañano sea de 1cm"
+        },
+        {
+            "id": "8",
+            "nombre": "Janet Van Dyne",
+            "nombreH": "la Avispa",
+            "biografia": "El personaje aparece en la película de Marvel Cinematic Universe Ant-Man (2015) en un cameo, interpretada por Hayley Lovitt, mientras que Michelle Pfeiffer interpreta a Janet van Dyne en las películas de Ant-Man and the Wasp (2018) sufrida por el chasquido en Infinity War, Avengers: Endgame (2019) y en la próxima Ant-Man and the Wasp: Quantumania (2023). Una Avispa original del MCU, la hija de Janet, Hope van Dyne (que lleva el nombre de Hope Pym), es interpretada en cada película por Evangeline Lilly.",
+            "habilidad": "Cambiar su tamaño a voluntad, Rayos de energía bio-eléctrica, Vuelo (mediante alas insectoides),Control telepático de los insectos",
+            "fuezaA": "Fuerza Sobrehumana"
+        },
+        {
+            "id": "9",
+            "nombre": "",
+            "nombreH": "",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "10",
+            "nombre": "Nicholas Joseph Fury",
+            "nombreH": "Nick Fury",
+            "biografia": "El personaje aparece frecuentemente en los libros de Marvel como el antiguo jefe de S.H.I.E.L.D. y como intermediario entre el gobierno de los Estados Unidos o las Naciones Unidas y varios superhéroes. Finalmente se revela que Fury toma un medicamento especial llamado Fórmula Infinita que detuvo su envejecimiento y le permite estar activo a pesar de tener casi un siglo de edad.",
+            "habilidad": "Maestro en espionaje y recopilación de inteligencia, Estratega militar experto, Experto en operaciones especiales, Longevidad a través de la Fórmula Infinita",
+            "fuezaA": "Su fuerza se mide mas como destresa"
+        },
+        {
+            "id": "11",
+            "nombre": "Natalia Alianovna Romanova",
+            "nombreH": "Viuda Negra",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "12",
+            "nombre": "",
+            "nombreH": "Thor",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "13",
+            "nombre": "",
+            "nombreH": "Deadpool",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "14",
+            "nombre": "",
+            "nombreH": "Ojo de halcon",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "15",
+            "nombre": "",
+            "nombreH": "Wolverin",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        }
+        ],
+
+    "Dc": [
+        {
+            "id": "1",
+            "nombre": "",
+            "nombreH": "Batman",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+
+        {
+            "id": "2",
+            "nombre": "",
+            "nombreH": "Superman",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "3",
+            "nombre": "",
+            "nombreH": "Mujer Maravilla",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "4",
+            "nombre": "",
+            "nombreH": "Aquaman",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "5",
+            "nombre": "",
+            "nombreH": "Cyborg",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "6",
+            "nombre": "",
+            "nombreH": "Flash",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "7",
+            "nombre": "",
+            "nombreH": "Linterna Verde",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "8",
+            "nombre": "",
+            "nombreH": "Zatanna",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "9",
+            "nombre": "",
+            "nombreH": "Doctro Fate",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "10",
+            "nombre": "",
+            "nombreH": "CatWoman",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "11",
+            "nombre": "",
+            "nombreH": "Chica Halcon",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "12",
+            "nombre": "",
+            "nombreH": "Hombre Halcon",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "13",
+            "nombre": "",
+            "nombreH": "Mera",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "14",
+            "nombre": "",
+            "nombreH": "Super Girl",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        },
+        {
+            "id": "15",
+            "nombre": "",
+            "nombreH": "Robin",
+            "biografia": "",
+            "habilidad": "",
+            "fuezaA": "0"
+        }
+    ]
+}]

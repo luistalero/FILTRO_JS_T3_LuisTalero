@@ -1,71 +1,89 @@
-document.addEventListener('DOMContentLoaded', iniciar);
+// Función para cargar el archivo JSON local
+async function cargarSuperheroes() {
+    try {
+        const response = await fetch('./json/data.json'); // Cargar el archivo JSON
+        const data = await response.json(); // Convertir la respuesta a JSON
 
-function iniciar() {
-    const superHeroes = document.getElementById('contenedor');
-    const dialo = document.getElementById('dialo');
-    const contenidoDialo = document.getElementById('contenidodialo');
-    const cerrar = document.getElementById('cerrar');
+        // Acceder a los héroes de Marvel y DC
+        const superheroesMarvel = data[0].marvel;
+        const superheroesDC = data[0].Dc;
 
-    // Inicializar los eventos
-    cerrar.addEventListener('click', cerrarDialo);
+        // Limpiar los contenedores antes de añadir tarjetas
+        document.getElementById('marvel').innerHTML = '';
+        document.getElementById('dc').innerHTML = '';
 
-    // Cargar personajes
-    cargarPersonajes();
+        // Renderizar tarjetas de Marvel y DC
+        crearTarjetas(superheroesMarvel, 'marvel');
+        crearTarjetas(superheroesDC, 'dc');
 
-    // Función para cargar personajes del archivo JSON
-    async function cargarPersonajes() {
-        try {
-            const personajes = await obtenerPersonajes();
-            renderizarTarjetasPersonajes(personajes);
-        } catch (error) {
-            console.error('Error al cargar personajes:', error);
-        }
-    }
-
-    // Función para obtener personajes del archivo JSON
-    async function obtenerPersonajes() {
-        const respuesta = await fetch('./json/data.json');
-        if (!respuesta.ok) throw new Error('Error al cargar el archivo JSON');
-        return respuesta.json();
-    }
-
-    // Función para renderizar las tarjetas de personajes
-    function renderizarTarjetasPersonajes(personajes) {
-        superHeroes.innerHTML = ''; // Limpiar el contenedor
-        personajes.forEach(personaje => {
-            const tarjeta = crearTarjetaPersonaje(personaje);
-            superHeroes.appendChild(tarjeta);
-        });
-    }
-
-    // Función para crear una tarjeta de personaje
-    function crearTarjetaPersonaje(personaje) {
-        const tarjeta = document.createElement('div');
-        tarjeta.classList.add('tarjeta-personaje');
-        tarjeta.innerHTML = `
-            <img src="${personaje.imagen}" alt="${personaje.nombrePersonaje}">
-            <h3>${personaje.nombrePersonaje}</h3>
-            <p>${personaje.casaProductora}</p>
-        `;
-        tarjeta.addEventListener('click', () => abrirDialogo(personaje));
-        return tarjeta;
-    }
-
-    // Función para abrir el cuadro de diálogo
-    function abrirDialogo(personaje) {
-        contenidoDialo.innerHTML = `
-            <h2>${personaje.nombrePersonaje}</h2>
-            <img src="${personaje.imagen}" alt="${personaje.nombrePersonaje}">
-            <p><strong>Nombre Real:</strong> ${personaje.nombreReal}</p>
-            <p><strong>Biografía:</strong> ${personaje.biografia}</p>
-            <p><strong>Resistencia:</strong> ${personaje.resistencia}</p>
-            <p><strong>Fuerza de Ataque:</strong> ${personaje.fuerzaAtaque}</p>
-        `;
-        dialo.showModal();
-    }
-
-    // Función para cerrar el cuadro de diálogo
-    function cerrarDialo() {
-        dialo.close();
+        const modal = document.getElementById('modal');
+        modal.style.display = 'none'
+    } catch (error) {
+        console.error('Error al cargar el archivo JSON:', error);
     }
 }
+
+// Función para crear las tarjetas de cada superhéroe
+function crearTarjetas(superheroes, categoria) {
+    const contenedor = document.getElementById(categoria);
+
+    superheroes.forEach(superheroe => {
+        const tarjeta = document.createElement('div');
+        tarjeta.classList.add('tarjeta');
+
+        // Imagen del superhéroe
+        const img = document.createElement('img');
+        img.src = superheroe.img || 'ruta/imagen/default.jpg'; // Imagen por defecto si falta
+        img.alt = `${superheroe.nombreH}`;
+        tarjeta.appendChild(img);
+
+        // Nombre del superhéroe
+        const nombreH = document.createElement('h3');
+        nombreH.textContent = superheroe.nombreH || 'Nombre desconocido';
+        tarjeta.appendChild(nombreH);
+
+        tarjeta.addEventListener("click", () => {
+            mostrarModal(superheroe);
+        });
+
+        // Añadir la tarjeta al contenedor correspondiente
+        contenedor.appendChild(tarjeta);
+    });
+}
+
+// Función para mostrar el modal con la información del superhéroe
+function mostrarModal(superheroe) {
+    const modal = document.getElementById('modal');
+    const info = document.getElementById('info-modal');
+
+    // Limpiar el contenido anterior del modal
+    info.innerHTML = '';
+
+    // Agregar el contenido del superhéroe al modal
+    info.innerHTML = `
+        <img src="${superheroe.imgS}" alt="${superheroe.nombreH}" />
+        <h3>${superheroe.nombreH}</h3>
+        <p><strong>Nombre real:</strong> ${superheroe.nombre || 'Desconocido'}</p>
+        <p><strong>Habilidad:</strong> ${superheroe.habilidad || 'Desconocida'}</p>
+        <p><strong>Historia:</strong> ${superheroe.biografia || 'Desconocida'}</p>
+    `;
+
+    // Mostrar el modal
+    modal.style.display = 'block';
+
+    // Cerrar el modal cuando se haga clic en el botón de cerrar
+    document.querySelector(".cerrar").addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+}
+
+// Cargar los héroes al cargar la página
+document.addEventListener('DOMContentLoaded', cargarSuperheroes);
+
+// Cerrar el modal cuando se haga clic fuera del contenido
+window.addEventListener('click', (event) => {
+    const modal = document.getElementById('modal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});

@@ -1,0 +1,153 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedores de las tarjetas */
+.contenedor {
+    margin-bottom: 40px;
+}
+
+/* Título para las secciones */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para las tarjetas */
+.tarjeta {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+/* Imágenes de los superhéroes */
+.tarjeta img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Estilos para el contenido dentro de las tarjetas */
+.tarjeta h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Diferenciar entre Marvel y DC */
+
+/* Tarjetas de Marvel */
+#marvel .tarjeta {
+    border-color: #ed1d24;
+    background-color: #fcecec;
+}
+
+#marvel h3 {
+    color: #ed1d24;
+}
+
+/* Tarjetas de DC */
+#dc .tarjeta {
+    border-color: #0072ce;
+    background-color: #e3f2fc;
+}
+
+#dc h3 {
+    color: #0072ce;
+}
+
+.modal {
+    padding: 3% 0 0 25%;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: modalFadeIn 0.3s;
+}
+
+/* Botón de cerrar */
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    background-color: #deb80e80;
+}
+
+/* Imagen y contenido del modal */
+#modal img {
+    width: 30%;
+    height: 40%;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+
+
+@keyframes modalFadeIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive: ajustar la cantidad de tarjetas en una fila según el tamaño de pantalla */
+@media (max-width: 768px) {
+    .tarjeta {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .tarjeta {
+        width: 100%;
+    }
+}
